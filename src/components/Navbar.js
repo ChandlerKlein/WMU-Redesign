@@ -5,6 +5,11 @@ import M from 'materialize-css';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+  const icon = {
+    color: 'black',
+    margin: '3px 10px 0px 10px',
+  };
+
   return (
     <div>
       <ul id='dropdown1' className='dropdown-content'>
@@ -104,6 +109,59 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+
+      <div className='row'>
+        <div
+          className='col s12 hide-on-med-and-up show-on-medium yellow darken-2 center-align'
+          style={{ padding: '5px' }}
+        >
+          <Link
+            to='/alerts'
+            className='tooltipped'
+            data-tooltip='Alert Settings'
+          >
+            <i className='material-icons' style={icon}>
+              notification_important
+            </i>
+          </Link>
+
+          <Link to='#' className='tooltipped' data-tooltip='Academic Catalog'>
+            <i className='material-icons' style={icon}>
+              library_books
+            </i>
+          </Link>
+
+          <Link to='#' className='tooltipped' data-tooltip='Elearning'>
+            <i className='material-icons' style={icon}>
+              dashboard
+            </i>
+          </Link>
+
+          <Link to='#' className='tooltipped' data-tooltip='Experience WMU'>
+            <i className='material-icons' style={icon}>
+              explore
+            </i>
+          </Link>
+
+          <Link to='#' className='tooltipped' data-tooltip='People Search'>
+            <i className='material-icons' style={icon}>
+              people
+            </i>
+          </Link>
+
+          <Link to='#' className='tooltipped' data-tooltip='W-Exchange'>
+            <i className='material-icons' style={icon}>
+              email
+            </i>
+          </Link>
+
+          <Link to='#' className='tooltipped' data-tooltip='Help'>
+            <i className='material-icons' style={icon}>
+              help
+            </i>
+          </Link>
+        </div>
+      </div>
 
       <ul className='sidenav' id='mobile-demo'>
         <li>
