@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[WMU Redesign](https://wmu-redesign.web.app)
 
 ## Available Scripts
 
