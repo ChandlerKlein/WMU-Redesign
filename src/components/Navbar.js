@@ -1,7 +1,8 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import logo from '../assets/W-gold-brown.png';
 import M from 'materialize-css';
+
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -11,14 +12,14 @@ const Navbar = () => {
           <span>Chandler Klein</span>
         </li>
         <li>
-          <a href='#'>Log out</a>
+          <Link to='#'>Log out</Link>
         </li>
       </ul>
       <nav className='brown darken-4 z-depth-3'>
         <div className='nav-wrapper'>
           <div className='row'>
             <div className='col s2 center-align'>
-              <a href='#' className='brand-logo'>
+              <Link to='/' className='brand-logo'>
                 <img
                   className='responsive-img left'
                   src={logo}
@@ -31,63 +32,63 @@ const Navbar = () => {
                 >
                   Western Michigan University
                 </span>
-              </a>
+              </Link>
             </div>
-            <a href='#' data-target='mobile-demo' className='sidenav-trigger'>
+            <Link to='#' data-target='mobile-demo' className='sidenav-trigger'>
               <i className='material-icons'>menu</i>
-            </a>
+            </Link>
             <div className='col s10'>
               <ul className='right hide-on-med-and-down'>
                 <li>
-                  <a
-                    href='#'
+                  <Link
+                    to='/alerts'
                     className='tooltipped'
                     data-tooltip='Alert Settings'
                   >
                     <i className='material-icons'>notification_important</i>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href='#'
+                  <Link
+                    to='#'
                     className='tooltipped'
                     data-tooltip='Academic Catalog'
                   >
                     <i className='material-icons'>library_books</i>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='#' className='tooltipped' data-tooltip='Elearning'>
+                  <Link to='#' className='tooltipped' data-tooltip='Elearning'>
                     <i className='material-icons'>dashboard</i>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href='#'
+                  <Link
+                    to='#'
                     className='tooltipped'
                     data-tooltip='Experience WMU'
                   >
                     <i className='material-icons'>explore</i>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href='#'
+                  <Link
+                    to='#'
                     className='tooltipped'
                     data-tooltip='People Search'
                   >
                     <i className='material-icons'>people</i>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='#' className='tooltipped' data-tooltip='W-Exchange'>
+                  <Link to='#' className='tooltipped' data-tooltip='W-Exchange'>
                     <i className='material-icons'>email</i>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href='#' className='tooltipped' data-tooltip='Help'>
+                  <Link to='#' className='tooltipped' data-tooltip='Help'>
                     <i className='material-icons'>help</i>
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a

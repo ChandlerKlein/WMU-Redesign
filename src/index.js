@@ -3,10 +3,9 @@ import ReactDOM from 'react-dom';
 
 import * as serviceWorker from './serviceWorker';
 
-import App from './components/App';
-
 import 'materialize-css/dist/css/materialize.min.css';
-import './css/App.css';
+
+import App from './components/App';
 
 ReactDOM.render(
   <React.StrictMode>
